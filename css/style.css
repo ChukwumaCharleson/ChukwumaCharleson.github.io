@@ -41,22 +41,30 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* About Me styles */
+/* Update styles for about section */
+#about {
+    padding: 50px 0;
+}
+
 .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
     flex: 1;
 }
 
 .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; /* Align content to the end (right) */
-    align-items: center; /* Center content vertically */
+    width: 50%; /* Adjust the width as needed */
 }
 
 .about-image img {
-    max-width: 100%; /* Ensure image does not exceed its container */
-    max-height: 100%; /* Ensure image does not exceed its container */
+    max-width: 100%;
+    height: auto;
 }
+
 
 
 .project-card {
