@@ -42,6 +42,7 @@ h2 {
 }
 
 /* Update styles for about section */
+
 #about {
     padding: 50px 0;
 }
@@ -54,17 +55,20 @@ h2 {
 
 .about-text {
     flex: 1;
+    max-width: 50%; /* Adjust as needed */
 }
 
 .about-image {
-    width: 50%; /* Adjust the width as needed */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px; /* Add space between text and image */
 }
 
 .about-image img {
     max-width: 100%;
     height: auto;
 }
-
 
 
 .project-card {
