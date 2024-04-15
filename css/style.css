@@ -55,14 +55,14 @@ h2 {
 
 .about-text {
     flex: 1;
-    max-width: 60%; /* Adjust as needed */
+    max-width: 70%; /* Adjust as needed */
 }
 
 .about-image {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    padding-left: 20px; /* Add space between text and image */
+    padding-left: 10px; /* Add space between text and image */
 }
 
 .about-image img {
