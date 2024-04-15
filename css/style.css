@@ -55,7 +55,7 @@ h2 {
 
 .about-text {
     flex: 1;
-    max-width: 50%; /* Adjust as needed */
+    max-width: 60%; /* Adjust as needed */
 }
 
 .about-image {
