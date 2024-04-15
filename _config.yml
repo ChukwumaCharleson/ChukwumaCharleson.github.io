@@ -1,0 +1,44 @@
+# Site settings
+title: Your Name's Portfolio
+description: A showcase of my work in the tech world.
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+
+# Custom settings
+portfolio_projects:
+  - title: Project 1
+    description: A brief description of project 1.
+    technologies: [HTML, CSS, JavaScript]
+    links:
+      - text: GitHub Repository
+        url: https://github.com/yourusername/project1
+      - text: Live Demo
+        url: https://yourwebsite.com/project1
+  - title: Project 2
+    description: A brief description of project 2.
+    technologies: [Python, Flask, PostgreSQL]
+    links:
+      - text: GitHub Repository
+        url: https://github.com/yourusername/project2
+      - text: Live Demo
+        url: https://yourwebsite.com/project2
+  # Add more projects as needed
+
+# Optional blog section
+blog_enabled: true
+blog_title: Tech Insights
+blog_description: Insights and experiences in the tech world.
+blog_posts_limit: 5
+blog_posts:
+  - title: My First Tech Blog Post
+    date: 2024-04-15
+    description: An exciting journey into the world of tech blogging.
+    url: https://yourwebsite.com/blog/post1
+  # Add more blog posts as needed
+
+# Contact information
+contact_email: your.email@example.com
+contact_phone: +1234567890
+contact_address: Your Address, City, Country
