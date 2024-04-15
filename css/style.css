@@ -41,6 +41,24 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* About Me styles */
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align content to the end (right) */
+    align-items: center; /* Center content vertically */
+}
+
+.about-image img {
+    max-width: 100%; /* Ensure image does not exceed its container */
+    max-height: 100%; /* Ensure image does not exceed its container */
+}
+
+
 .project-card {
     background-color: #fff;
     border-radius: 5px;
