@@ -69,3 +69,123 @@ h2 {
 .project-card .btn:hover {
     background-color: #555;
 }
+
+.skills-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+}
+
+.skills-list li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #666;
+}
+
+/* Add animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations to project cards */
+.project-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Apply animations to skills list */
+.skills-list {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Add hover effect to project cards */
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Add styles for interactive background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-background-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    z-index: -1;
+    filter: grayscale(100%);
+}
+
+/* Add scrolling animations to sections */
+#about, #projects, #skills, #contact {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#about.show, #projects.show, #skills.show, #contact.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Portfolio Timeline styles */
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: translateY(50%);
+}
