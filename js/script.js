@@ -1,23 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Add the "fly in" effect to the project cards
-          entry.target.querySelectorAll('.project-card').forEach((card, index) => {
-            card.style.transitionDelay = `${index * 100}ms`;
-            card.classList.add('show');
-          });
-        }
-        entry.target.classList.add('show');
-      });
+    const sections = document.querySelectorAll('.project-card');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                    card.style.transitionDelay = `${index * 100}ms`;
+                    card.classList.add('show');
+            }
+        });
     }, { threshold: 0.5 });
-  
-    sections.forEach((section) => {
-      observer.observe(section);
+
+    sections.forEach(section => {
+        observer.observe(section);
     });
-  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Radar chart data
     const data = {
