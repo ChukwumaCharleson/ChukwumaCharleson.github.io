@@ -1,21 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
+    const projectsSection = document.getElementById('projects');
+    const projectCards = projectsSection.querySelectorAll('.project-card');
     
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.querySelectorAll('.project-card').forEach((card, index) => {
+                projectCards.forEach((card, index) => {
                     card.style.transitionDelay = `${index * 100}ms`;
                     card.classList.add('show');
                 });
             }
-            entry.target.classList.add('show');
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.8 }); // Set threshold to 1 to trigger only when fully visible
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+    observer.observe(projectsSection);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
