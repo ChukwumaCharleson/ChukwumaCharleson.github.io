@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const projectsSection = document.getElementById('projects');
-    const projectCards = projectsSection.querySelectorAll('.project-card');
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                projectCards.forEach((card, index) => {
-                    card.style.transitionDelay = `${index * 100}ms`;
-                    card.classList.add('show');
-                });
-            }
-        });
-    }, { threshold: 0.8 }); // Set threshold to 1 to trigger only when fully visible
-
-    observer.observe(projectsSection);
-});
-
+    const sections = document.querySelectorAll('section');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add the "fly in" effect to the project cards
+          entry.target.querySelectorAll('.project-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 100}ms`;
+            card.classList.add('show');
+          });
+        }
+        entry.target.classList.add('show');
+      });
+    }, { threshold: 0.5 });
+  
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  });
 document.addEventListener('DOMContentLoaded', () => {
     // Radar chart data
     const data = {
