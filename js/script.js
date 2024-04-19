@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show');
+                entry.target.querySelectorAll('.project-card').forEach((card, index) => {
+                    card.style.transitionDelay = `${index * 100}ms`;
+                    card.classList.add('show');
+                });
             }
+            entry.target.classList.add('show');
         });
     }, { threshold: 0.5 });
 
