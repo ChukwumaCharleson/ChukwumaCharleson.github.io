@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #420b0b;
+    background-color: #8b0000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -124,7 +124,7 @@ h2 {
 }
 
 .skills-list li {
-    background-color: #420b0b;
+    background-color: #8b0000;
     color: #fff;
     padding: 10px 20px;
     border-radius: 3px;
@@ -141,7 +141,7 @@ h2 {
 }
 
 .contact-list a {
-    color: #420b0b;
+    color: #8b0000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -226,7 +226,7 @@ h2 {
 
 .timeline-date {
     padding: 10px;
-    background-color: #420b0b;
+    background-color: #8b0000;
     color: #fff;
     border-radius: 3px;
     font-size: 0.9rem;
