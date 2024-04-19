@@ -32,6 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const profileImg = document.getElementById('profile-img');
+
+    profileImg.addEventListener('mouseenter', () => {
+        profileImg.style.transform = 'scale(1.05)';
+        profileImg.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.3)';
+    });
+
+    profileImg.addEventListener('mouseleave', () => {
+        profileImg.style.transform = 'scale(1)';
+        profileImg.style.boxShadow = 'none';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     // Radar chart data
     const data = {
         labels: ['Python', 'Machine Learning', 'Data Analysis', 'TensorFlow', 'PyTorch'],
