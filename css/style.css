@@ -113,7 +113,8 @@ nav ul li a:hover {
 /* Doughnut menu */
 .menu-open {
     display: none; /* Hide initially */
-    position: absolute;
+    position: fixed;
+    color: #fff;
     top: 40px;
     right: 20px;
     background-color: rgba(56, 55, 55, 0.9); /* Semi-transparent background */
