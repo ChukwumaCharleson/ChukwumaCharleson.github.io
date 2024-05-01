@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuOpen = document.querySelector('.menu-open');
+
+    menuToggle.addEventListener('click', () => {
+        menuOpen.style.display === 'none' ? menuOpen.style.display = 'block' : menuOpen.style.display = 'none';
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     
     const observer = new IntersectionObserver(entries => {
@@ -83,12 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menuOpen = document.querySelector('.menu-open');
-
-    menuToggle.addEventListener('click', () => {
-        menuOpen.classList.toggle('open');
-    });
-});
 
