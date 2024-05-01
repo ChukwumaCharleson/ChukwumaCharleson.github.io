@@ -1,3 +1,4 @@
+
 /* Reset some default styles */
 
 * {
@@ -18,9 +19,8 @@ body {
     padding: 0 20px; /* Keep some padding on the sides */
 }
 
-/* Update styles for header section */
 header {
-    background: linear-gradient(135deg, #8b0000, #ff4500); /* Gradient background */
+    background-color: #8b0000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -34,88 +34,20 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Add media queries for smaller screens */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    header nav ul {
-        display: none;
-    }
-
-    header nav.active ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 20px 0;
-    }
-
-    header nav.active ul li {
-        margin: 10px 0;
-    }
-
-    .donut {
-        display: block;
-        position: relative;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    .donut span {
-        position: absolute;
-        width: 12px;
-        height: 2px;
-        background-color: #fff;
-        top: 0;
-        left: 0;
-        transition: transform 0.3s ease;
-    }
-
-    .donut span:nth-child(1) {
-        transform: translateY(6px);
-    }
-
-    .donut span:nth-child(3) {
-        transform: translateY(-6px);
-    }
-
-    .donut.active span:nth-child(1) {
-        transform: translateY(0px) rotate(45deg);
-    }
-
-    .donut.active span:nth-child(3) {
-        transform: translateY(0px) rotate(-45deg);
-    }
-
-    .donut.active span:nth-child(2) {
-        opacity: 0;
-    }
-}
-
 section {
     padding: 50px 0;
+    
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+
 /* Update styles for about section */
 
+/* About Section styles */
 /* About Section styles */
 .about-content {
     display: flex;
@@ -161,6 +93,7 @@ h2 {
     background-color: #555;
 }
 
+
 /* Update styles for Projects section */
 /* Projects section styles */
 .project-grid {
@@ -204,14 +137,8 @@ h2 {
     background-color: #555;
 }
 
-/* Update project grid for smaller screens */
-@media screen and (max-width: 768px) {
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-/* The skills section */
+
 .skills-list {
     list-style-type: none;
     display: grid;
