@@ -17,24 +17,61 @@ body {
     padding: 0 20px;
 }
 
+/* Reset some default styles */
+/* Existing styles here... */
+
+/* Header styles */
 header {
-    background-color: #8b0000;
-    color: #fff;
-    padding: 20px 0;
-    /*position: fixed;*/
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000; /* Ensure header stays on top of other content */
 }
 
-header .container {
+nav {
+    text-align: center; /* Center align menu links */
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('media/Picture3.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    color: #fff;
 }
 
-header h1, header p {
-    margin: 0;
+.hero-text {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
+
+.hero-description {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 .menu-toggle {
     display: block;

@@ -25,6 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const heroText = document.querySelector('.hero-text');
+    const text = "I am Chukwuma Charleson";
+    let index = 0;
+
+    const intervalId = setInterval(() => {
+        heroText.innerHTML += text[index];
+        index++;
+        if (index === text.length) {
+            clearInterval(intervalId); // Stop the interval when all letters are displayed
+        }
+    }, 100); // Adjust the interval duration as needed
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
