@@ -199,6 +199,70 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+
+/* Update styles for about section */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; /* Add some margin for spacing */
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.about-image .btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-image .btn:hover {
+    background-color: #555;
+}
+
+/* Responsive layout for about section */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack about content vertically */
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .about-text {
+        margin-right: 0; /* Remove right margin for text on smaller screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .about-image {
+        margin-right: 0; /* Remove right margin for image on smaller screens */
+        text-align: center; /* Center image on smaller screens */
+    }
+}
+
+
 /* Remove scroll transition */
 .project-card {
     transition: none;
