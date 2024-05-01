@@ -1,3 +1,108 @@
+/* Reset some default styles */
+/* Existing styles here... */
+
+/* New styles for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px; /* Increase padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Decrease font size for smaller screens */
+    }
+
+    header p {
+        font-size: 1rem; /* Decrease font size for smaller screens */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack about content vertically */
+    }
+
+    .about-image {
+        margin-left: 0; /* Remove left margin for image on smaller screens */
+        margin-right: 0; /* Remove right margin for image on smaller screens */
+        text-align: center; /* Center image on smaller screens */
+    }
+
+    .about-image img {
+        margin-bottom: 10px; /* Decrease bottom margin for image on smaller screens */
+    }
+
+    .about-image .btn {
+        position: static; /* Change button position to static for smaller screens */
+        display: block; /* Display button as block element for smaller screens */
+        margin: 10px auto; /* Center button horizontally */
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr); /* Change grid layout to single column for smaller screens */
+        grid-gap: 20px; /* Decrease grid gap for smaller screens */
+    }
+
+    .timeline-date {
+        left: auto; /* Remove left positioning for timeline date */
+        right: -100px; /* Move timeline date to the right for smaller screens */
+    }
+
+    /* Add styles for navigation menu */
+    nav {
+        display: none; /* Hide navigation menu by default */
+    }
+
+    .menu-toggle {
+        display: block; /* Display menu toggle button */
+        position: fixed; /* Fix menu toggle button position */
+        top: 20px; /* Adjust top position */
+        right: 20px; /* Adjust right position */
+        z-index: 9999; /* Ensure it's above other content */
+        color: #fff; /* Set text color */
+        background-color: #8b0000; /* Set background color */
+        padding: 10px; /* Add padding */
+        border-radius: 50%; /* Make it round */
+    }
+
+    .menu-toggle:hover {
+        background-color: #555; /* Change background color on hover */
+    }
+
+    .menu-toggle::before {
+        content: "\f0c9"; /* Add hamburger icon */
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+    }
+
+    .menu-open {
+        display: block; /* Display navigation menu when open */
+        position: fixed; /* Fix navigation menu position */
+        top: 60px; /* Adjust top position */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        height: calc(100% - 60px); /* Adjust height */
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        z-index: 9998; /* Ensure it's above other content */
+    }
+
+    nav ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 20px; /* Add padding */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add margin between menu items */
+    }
+
+    nav ul li a {
+        color: #fff; /* Set text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1.2rem; /* Set font size */
+        display: block; /* Display as block element */
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+}
 
 /* Reset some default styles */
 
