@@ -125,12 +125,27 @@ nav ul li a:hover {
     transition: max-height 0.3s ease-in-out; /* Add transition effect */
 }
 
+/* Menu items styles */
+.menu-open ul {
+    list-style-type: none;
+    padding: 20px;
+    display: flex; /* Change to flex */
+    flex-direction: column; /* Display menu items vertically */
+}
+
+.menu-open ul li {
+    margin-bottom: 20px;
+}
+
+.menu-open ul li:last-child {
+    margin-bottom: 0;
+}
+
 .menu-open ul li a {
-    color: #fff; /* Set menu link color to white */
-    text-decoration: none;
+    color: #fff;
     font-size: 1.2rem;
-    display: block;
-    transition: color 0.3s ease; /* Add transition effect for smoother color change */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .menu-open ul li a:hover {
