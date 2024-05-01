@@ -1,13 +1,17 @@
-/* Reset some default styles */
+/* For Mobile rendering */
 
-/* Media query for smaller screens */
+/* Add media queries for smaller screens */
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 0 10px;
+    header {
+        padding: 20px;
     }
 
-    header {
-        padding: 20px 0;
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
     }
 
     .about-content {
@@ -15,8 +19,13 @@
         text-align: center;
     }
 
+    .about-text {
+        margin-bottom: 30px;
+    }
+
     .about-image {
-        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .about-image img {
@@ -25,23 +34,28 @@
 
     .about-image .btn {
         position: static;
-        display: block;
         margin-top: 20px;
-        transform: none;
     }
 
-    .timeline-item {
-        flex-direction: column;
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .timeline-date {
-        left: 0;
-        transform: none;
+    .project-card {
+        margin-bottom: 30px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-list li {
+        text-align: center;
     }
 }
 
-/* =============== End of Mobile Section =====================*/
 
+/* Reset some default styles */
 
 * {
     margin: 0;
