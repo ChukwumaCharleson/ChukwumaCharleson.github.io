@@ -1,60 +1,3 @@
-/* For Mobile rendering */
-
-/* Add media queries for smaller screens */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text {
-        margin-bottom: 30px;
-    }
-
-    .about-image {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .about-image img {
-        width: 100%;
-    }
-
-    .about-image .btn {
-        position: static;
-        margin-top: 20px;
-    }
-
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project-card {
-        margin-bottom: 30px;
-    }
-
-    .skills-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-list li {
-        text-align: center;
-    }
-}
-
-
 /* Reset some default styles */
 
 * {
@@ -83,30 +26,28 @@ header {
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+header h1 {
+    font-size: 2.5rem;
 }
 
-header nav ul li {
-    margin: 0 10px;
+header p {
+    font-size: 1.2rem;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #ccc;
-}
-
-/* Donut menu for smaller screens */
+/* Add media queries for smaller screens */
 @media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
     header nav ul {
         display: none;
     }
@@ -165,28 +106,16 @@ header nav ul li a:hover {
     }
 }
 
-header h1 {
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
 section {
     padding: 50px 0;
-    
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
-
 /* Update styles for about section */
 
-/* About Section styles */
 /* About Section styles */
 .about-content {
     display: flex;
@@ -232,10 +161,8 @@ h2 {
     background-color: #555;
 }
 
-
 /* Update styles for Projects section */
 /* Projects section styles */
-/* Update styles for Projects section */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,7 +210,6 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 
 /* The skills section */
 .skills-list {
