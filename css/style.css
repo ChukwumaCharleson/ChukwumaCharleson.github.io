@@ -75,11 +75,94 @@ body {
     padding: 0 20px; /* Keep some padding on the sides */
 }
 
+/* Update styles for header section */
 header {
-    background-color: #8b0000;
+    background: linear-gradient(135deg, #8b0000, #ff4500); /* Gradient background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Donut menu for smaller screens */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+    }
+
+    header nav.active ul li {
+        margin: 10px 0;
+    }
+
+    .donut {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .donut span {
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .donut span:nth-child(1) {
+        transform: translateY(6px);
+    }
+
+    .donut span:nth-child(3) {
+        transform: translateY(-6px);
+    }
+
+    .donut.active span:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    .donut.active span:nth-child(3) {
+        transform: translateY(0px) rotate(-45deg);
+    }
+
+    .donut.active span:nth-child(2) {
+        opacity: 0;
+    }
 }
 
 header h1 {
