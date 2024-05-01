@@ -260,6 +260,26 @@ nav ul li a {
     font-size: 0.9rem;
 }
 
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: #503806;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #666;
+}
+
 /* Update styles for section titles */
 h2 {
     font-size: 2.5rem;
