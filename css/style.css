@@ -17,35 +17,14 @@ body {
     padding: 0 20px;
 }
 
-/* Header styles */
 header {
-    position: relative; /* Ensure relative positioning for absolute children */
-    color: #fff; /* Change text color to white */
-    overflow: hidden; /* Hide overflowing patterns */
-}
-
-/* Animated background pattern */
-.header-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, #3a3a3a 25%, transparent 25%, transparent 75%, #3a3a3a 75%, #3a3a3a), linear-gradient(-45deg, #3a3a3a 25%, transparent 25%, transparent 75%, #3a3a3a 75%, #3a3a3a);
-    background-size: 50px 50px;
-    animation: color-change 10s ease-in-out infinite;
-    z-index: -1; /* Ensure it's behind other content */
+    z-index: 1000;
 }
-
-@keyframes color-change {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
 
 header .container {
     display: flex;
@@ -137,7 +116,7 @@ nav ul li a:hover {
     position: absolute;
     top: 40px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: rgba(56, 55, 55, 0.9); /* Semi-transparent background */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
     z-index: 9998;
