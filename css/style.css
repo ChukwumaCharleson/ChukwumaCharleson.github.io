@@ -315,67 +315,58 @@ nav ul li a:hover {
 }
 
 /* Update styles for Skills section */
-
 #skills {
-    text-align: center; /* Center align text */
+    text-align: left;
+    margin-top: 50px;
 }
 
 .skills-list {
-    list-style-type: none;
     display: flex;
-    flex-wrap: wrap; /* Allow skills to wrap to the next line */
-    justify-content: center; /* Center align items */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
+    margin-top: 40px;
 }
 
 .skills-list li {
     background-color: #8b0000;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 3px;
-    margin: 5px; /* Add some margin between skills */
-    font-size: 1.2rem;
-    animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.skills-list li:hover {
+    transform: translateY(-3px);
 }
-
 
 /* Update styles for Timeline section */
-.timeline {
-    display: flex;
-    flex-direction: column;
+#timeline {
+    margin-top: 50px; /* Add some margin from the previous section */
 }
 
 .timeline-item {
     display: flex;
-    margin-bottom: 40px;
+    justify-content: space-between; /* Space items evenly */
+    margin-bottom: 30px;
 }
 
 .timeline-content {
     flex: 1;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-date {
     padding: 10px;
     background-color: #8b0000;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 0.9rem;
-    margin-right: 20px;
 }
 
 /* Update styles for section titles */
