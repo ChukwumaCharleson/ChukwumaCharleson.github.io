@@ -152,6 +152,7 @@ h2 {
 
 /* Update styles for Projects section */
 /* Projects section styles */
+/* Update styles for Projects section */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -193,8 +194,15 @@ h2 {
     background-color: #555;
 }
 
+/* Update project grid for smaller screens */
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
+/* The skills section */
 .skills-list {
     list-style-type: none;
     display: grid;
