@@ -17,12 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
-    const menuOpen = document.querySelector('.menu-open');
+    const menu = document.querySelector('.menu-open');
 
     menuToggle.addEventListener('click', () => {
-        menuOpen.classList.toggle('show');
+        menu.classList.toggle('show');
     });
 });
+
 
 
 
