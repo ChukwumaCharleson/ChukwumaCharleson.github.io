@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuOpen = document.querySelector('.menu-open');
 
     menuToggle.addEventListener('click', () => {
-        menuOpen.style.display === 'none' ? menuOpen.style.display = 'block' : menuOpen.style.display = 'none';
+        menuOpen.classList.toggle('show');
     });
 });
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
