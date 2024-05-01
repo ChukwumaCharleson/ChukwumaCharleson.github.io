@@ -54,7 +54,7 @@ header h1, header p {
 }
 
 .menu-toggle::before {
-    content: "\f0c9"; /* Hamburger icon */
+     /* Hamburger icon */
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
@@ -114,7 +114,6 @@ nav ul li a:hover {
 .menu-open {
     display: none; /* Hide initially */
     position: fixed;
-    color: #fff;
     top: 40px;
     right: 20px;
     background-color: rgba(56, 55, 55, 0.9); /* Semi-transparent background */
@@ -124,6 +123,19 @@ nav ul li a:hover {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease-in-out; /* Add transition effect */
+}
+
+.menu-open ul li a {
+    color: #fff; /* Set menu link color to white */
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    transition: color 0.3s ease; /* Add transition effect for smoother color change */
+}
+
+.menu-open ul li a:hover {
+    text-decoration: underline;
+    color: #ccc; /* Change link color on hover */
 }
 
 .menu-open.show {
