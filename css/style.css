@@ -1,105 +1,4 @@
 /* Reset some default styles */
-/* Existing styles here... */
-
-/* New styles for mobile responsiveness */
-@media screen and (max-width: 768px) {
-    header {
-        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cg fill="%238b0000"%3E%3Crect x="0" y="0" width="50" height="50"%3E%3C/rect%3E%3Crect x="50" y="50" width="50" height="50"%3E%3C/rect%3E%3C/g%3E%3C/svg%3E');
-        background-size: 200% 100%;
-        animation: color-change 10s ease-in-out infinite;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 9999;
-        color: #fff;
-        background-color: #8b0000;
-        padding: 10px;
-        border-radius: 50%;
-    }
-
-    .menu-toggle:hover {
-        background-color: #555;
-    }
-
-    .menu-toggle::before {
-        content: "\f0c9";
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-    }
-
-    .menu-open {
-        display: block;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 60px);
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 9998;
-    }
-
-    nav ul {
-        list-style-type: none;
-        padding: 20px;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2rem;
-        display: block;
-    }
-
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
-
-    .about-content {
-        flex-direction: column; /* Stack about content vertically */
-    }
-
-    .about-image {
-        margin-left: 0; /* Remove left margin for image on smaller screens */
-        margin-right: 0; /* Remove right margin for image on smaller screens */
-        text-align: center; /* Center image on smaller screens */
-    }
-
-    .about-image img {
-        margin-bottom: 10px; /* Decrease bottom margin for image on smaller screens */
-    }
-
-    .about-image .btn {
-        position: static; /* Change button position to static for smaller screens */
-        display: block; /* Display button as block element for smaller screens */
-        margin: 10px auto; /* Center button horizontally */
-    }
-
-    .project-grid {
-        grid-template-columns: repeat(1, 1fr); /* Change grid layout to single column for smaller screens */
-        grid-gap: 20px; /* Decrease grid gap for smaller screens */
-    }
-
-    .timeline-date {
-        left: auto; /* Remove left positioning for timeline date */
-        right: -100px; /* Move timeline date to the right for smaller screens */
-    }
-
-}
-
-/* Reset some default styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -113,111 +12,110 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Increase the maximum width */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Keep some padding on the sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Existing styles here... */
-
-/* New styles for header */
-/* Common styles for all screen sizes */
-/* Existing styles here... */
-
-/* Header styles */
 header {
-    background-image: linear-gradient(45deg, #9b2d30 25%, transparent 25%, transparent 75%, #9b2d30 75%, #9b2d30), linear-gradient(-45deg, #9b2d30 25%, transparent 25%, transparent 75%, #9b2d30 75%, #9b2d30);
-    background-size: 50px 50px;
-    animation: color-change 10s ease-in-out infinite;
-    color: #fff; /* Change text color to white */
-}
-
-/* Donut menu styles */
-.menu-toggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
+    background-color: #8b0000;
     color: #fff;
-    background-color: #9b2d30; /* Change menu background color */
-    padding: 10px;
-    border-radius: 50%;
-}
-
-/* Menu open styles */
-.menu-open {
-    display: block;
+    padding: 20px 0;
     position: fixed;
-    top: 60px;
-    right: 20px; /* Adjust right position */
-    width: 100px; /* Adjust width */
-    height: calc(100% - 60px);
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9998;
-    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Menu items styles */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+}
+
 nav ul {
     list-style-type: none;
-    padding: 20px;
+    display: flex;
 }
 
 nav ul li {
-    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Adjust header styles for better visibility */
-header h1,
-header p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
-}
-
-
-/* Styles for menu toggle button */
-.menu-toggle {
-    display: none; /* Hide by default */
-    cursor: pointer;
-}
-
-.menu-toggle::before {
-    content: "\f0c9"; /* Hamburger icon */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-
-/* Styles for menu container for small screens */
-.menu-open {
-    display: block;
+/* Sticky header */
+.sticky {
     position: fixed;
-    top: 60px;
-    right: 20px; /* Adjust right position */
-    width: 100px; /* Adjust width */
-    height: calc(100% - 60px);
+    top: 0;
+    width: 100%;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Doughnut menu */
+.menu-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9998;
-    overflow-y: auto; /* Enable vertical scrolling */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .menu-open nav {
     display: block;
+    margin-top: 40px;
 }
 
 .menu-open ul {
+    list-style-type: none;
     text-align: center;
-    margin-top: 20px;
 }
 
 .menu-open ul li {
@@ -239,8 +137,8 @@ header p {
     color: #ccc;
 }
 
-/* Styles for donut menu */
-.menu-open .menu-toggle {
+/* Doughnut menu toggle icon */
+.menu-toggle {
     display: block;
     position: fixed;
     top: 20px;
@@ -250,79 +148,29 @@ header p {
     background-color: #8b0000;
     padding: 10px;
     border-radius: 50%;
-}
-
-.menu-open .menu-toggle:hover {
-    background-color: #555;
-}
-
-
-section {
-    padding: 50px 0;
-    
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-
-/* Update styles for about section */
-
-/* About Section styles */
-/* About Section styles */
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about-text {
-    flex: 1;
-    text-align: left;
-}
-
-.about-image {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-    margin-left: 100px; /* Increase the margin to create space between the text */
-    margin-right: 50px; /* Add margin to the right */
-}
-
-.about-image img {
-    max-width: 100%;
-    display: block;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    right: 20px;
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
-}
-
-.about-image .btn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px; /* Adjust the position to the right */
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.about-image .btn:hover {
+.menu-toggle:hover {
     background-color: #555;
 }
 
+/* Remove scroll transition */
+.project-card {
+    transition: none;
+}
 
-/* Update styles for Projects section */
-/* Projects section styles */
+/* Update project section design */
+#projects {
+    padding-top: 100px; /* Add some top padding to create space for sticky header */
+}
+
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
+    padding: 0 20px; /* Add padding to align with container */
 }
 
 .project-card {
@@ -330,12 +178,11 @@ h2 {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .project-card:hover {
-    background-color: #8b0000; /* Dark red */
-    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
@@ -343,13 +190,13 @@ h2 {
 }
 
 .project-card p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .project-card .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #8b0000;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -360,125 +207,116 @@ h2 {
     background-color: #555;
 }
 
-
+/* Update styles for Skills section */
+#skills {
+    text-align: center;
+}
 
 .skills-list {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
 }
 
 .skills-list li {
     background-color: #8b0000;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.contact-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.contact-list li {
-    margin-bottom: 10px;
-}
-
-.contact-list a {
-    color: #8b0000;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-list a:hover {
-    color: #666;
-}
-
-/* Add animation keyframes */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Apply animations to project cards */
-.project-card {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-/* Apply animations to skills list */
-.skills-list {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-/* Add hover effect to project cards */
-.project-card {
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
     transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.skills-list li:hover {
+    transform: translateY(-3px);
 }
 
-/* Add styles for interactive background */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('your-background-image.jpg'); /* Replace with your image */
-    background-size: cover;
-    z-index: -1;
-    filter: grayscale(100%);
-}
-
-/* Add scrolling animations to sections */
-#about, #projects, #skills, #contact {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-    text-align: center;
-}
-
-#about.show, #projects.show, #skills.show, #contact.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Portfolio Timeline styles */
+/* Update styles for Timeline section */
 .timeline {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline-item {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .timeline-content {
     flex: 1;
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-date {
     padding: 10px;
     background-color: #8b0000;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+/* Update styles for section titles */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    color: #8b0000; /* Change section title color */
+}
+
+h2::after {
+    content: "";
     position: absolute;
-    top: 0;
-    left: -110px;
-    transform: translateY(50%);
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #8b0000; /* Use the same color as section title */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjust header styles for better visibility */
+    header {
+        padding: 20px 0; /* Adjust top and bottom padding */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reduce font size for header title */
+    }
+
+    header p {
+        font-size: 1rem; /* Reduce font size for header subtitle */
+    }
+
+    /* Adjust padding for sections */
+    section {
+        padding: 40px 0; /* Increase top and bottom padding */
+    }
+
+    /* Adjust project grid layout for smaller screens */
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Adjust padding for project cards */
+    .project-card {
+        padding: 15px; /* Reduce padding for project cards */
+    }
+
+    /* Adjust padding for timeline items */
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+
+    /* Adjust font size for section titles */
+    h2 {
+        font-size: 2rem; /* Reduce font size for section titles */
+    }
 }
