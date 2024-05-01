@@ -59,14 +59,14 @@ header h1, header p {
     font-weight: 900;
 }
 
-.menu-toggle span {
+/*.menu-toggle span {
     display: block;
     width: 25px;
     height: 3px;
     background-color: #fff;
     margin-bottom: 5px;
 }
-
+*/
 nav {
     display: none;
 }
