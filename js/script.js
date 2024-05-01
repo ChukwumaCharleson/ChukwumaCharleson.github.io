@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const heroText = document.querySelector('.hero-text');
-    const text = "I am Chukwuma Charleson";
+    const text = "I'm Chukwuma Charleson";
     let index = 0;
 
     const intervalId = setInterval(() => {

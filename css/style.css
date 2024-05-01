@@ -63,13 +63,30 @@ nav ul li a {
 }
 
 .hero-text {
-    font-size: 5rem;
+    font-size: 7rem;
     margin-bottom: 20px;
 }
 
 .hero-description {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+/* Existing styles */
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #8b0000; /* Change icon color on hover */
 }
 
 
