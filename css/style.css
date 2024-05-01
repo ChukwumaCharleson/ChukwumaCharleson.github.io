@@ -54,7 +54,7 @@ nav ul li a {
     background-image: url('../media/Picture3.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full viewport height */
+    height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
