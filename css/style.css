@@ -26,7 +26,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     z-index: 1000; /* Ensure header stays on top of other content */
 }
 
@@ -60,7 +60,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     color: #fff;
-    margin-top: 70px;
+   
 }
 
 .hero-text {
