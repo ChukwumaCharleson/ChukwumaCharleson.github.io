@@ -1,4 +1,48 @@
 /* Reset some default styles */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .about-image .btn {
+        position: static;
+        display: block;
+        margin-top: 20px;
+        transform: none;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-date {
+        left: 0;
+        transform: none;
+    }
+}
+
+/* =============== End of Mobile Section =====================*/
+
+
 * {
     margin: 0;
     padding: 0;
