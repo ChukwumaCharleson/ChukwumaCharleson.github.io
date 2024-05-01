@@ -94,6 +94,7 @@ nav ul li a:hover {
 
 /* Doughnut menu */
 .menu-open {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
