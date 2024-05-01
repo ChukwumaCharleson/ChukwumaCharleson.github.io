@@ -82,3 +82,13 @@ document.addEventListener('DOMContentLoaded', () => {
         options: options
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuOpen = document.querySelector('.menu-open');
+
+    menuToggle.addEventListener('click', () => {
+        menuOpen.classList.toggle('open');
+    });
+});
+

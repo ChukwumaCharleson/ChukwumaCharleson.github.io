@@ -50,7 +50,7 @@ header h1, header p {
 }
 
 nav {
-    display: flex;
+    display: none;
 }
 
 nav ul {
@@ -110,7 +110,7 @@ nav ul li a:hover {
 
 .menu-open nav {
     display: block;
-    margin-top: 40px;
+   /* margin-top: 40px; */
 }
 
 .menu-open ul {
