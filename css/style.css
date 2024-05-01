@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 .social-icon:hover {
-    color: #8b0000; /* Change icon color on hover */
+    color: #503806; /* Change icon color on hover */
 }
 
 
@@ -194,7 +194,7 @@ nav ul li a {
 .project-card .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8b0000;
+    background-color: #503806;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -220,7 +220,7 @@ nav ul li a {
 }
 
 .skills-list li {
-    background-color: #8b0000;
+    background-color: #503806;
     color: #fff;
     padding: 10px 20px;
     margin: 0 10px 10px 0;
@@ -254,7 +254,7 @@ nav ul li a {
 
 .timeline-date {
     padding: 10px;
-    background-color: #8b0000;
+    background-color: #503806;
     color: #fff;
     border-radius: 3px;
     font-size: 0.9rem;
@@ -265,7 +265,7 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     position: relative;
-    color: #8b0000; /* Change section title color */
+    color: #503806; /* Change section title color */
 }
 
 h2::after {
@@ -275,7 +275,7 @@ h2::after {
     left: 0;
     width: 50px;
     height: 4px;
-    background-color: #8b0000; /* Use the same color as section title */
+    background-color: #503806; /* Use the same color as section title */
 }
 
 /* Responsive design */
