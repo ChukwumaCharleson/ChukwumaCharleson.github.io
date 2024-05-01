@@ -31,7 +31,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(45deg, #9b2d30 25%, transparent 25%, transparent 75%, #9b2d30 75%, #9b2d30), linear-gradient(-45deg, #9b2d30 25%, transparent 25%, transparent 75%, #9b2d30 75%, #9b2d30);
+    background-image: linear-gradient(45deg, #3a3a3a 25%, transparent 25%, transparent 75%, #3a3a3a 75%, #3a3a3a), linear-gradient(-45deg, #3a3a3a 25%, transparent 25%, transparent 75%, #3a3a3a 75%, #3a3a3a);
     background-size: 50px 50px;
     animation: color-change 10s ease-in-out infinite;
     z-index: -1; /* Ensure it's behind other content */
