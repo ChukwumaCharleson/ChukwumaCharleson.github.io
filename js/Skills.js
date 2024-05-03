@@ -1,4 +1,4 @@
-import Skill from './Skill.js';
+import { Skill } from './Skill.js';
 
 export default function Skills() {
     return `
