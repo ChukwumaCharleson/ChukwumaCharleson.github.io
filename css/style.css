@@ -53,7 +53,7 @@ nav ul li a {
 #hero {
     background-image: url('../media/Picture3.png'); /* Replace with your background image */
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -65,18 +65,14 @@ nav ul li a {
 
 .hero-text {
     font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-description.first{
-    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 .hero-description {
     font-size: 1.2rem;
     font-weight: bold;
     position: relative;
-    top: 50px;
+    top: 35px;
 }
 
 /* Existing styles */
@@ -139,7 +135,7 @@ nav ul li a {
 }
 
 .btn:hover {
-    background-color: #ffd700;
+    background-color: #503806;
 }
 
 
@@ -324,7 +320,6 @@ nav ul li a {
     border-radius: 3px;
     font-size: 0.9rem;
 }
-
 
 .contact-list {
     list-style-type: none;

@@ -1,31 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.project-card');
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                    card.style.transitionDelay = `${index * 100}ms`;
-                    card.classList.add('show');
-            }
-        });
-    }, { threshold: 0.5 });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu-open');
-
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('show');
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
     const heroText = document.querySelector('.hero-text');
     const text = "I'm Chukwuma Charleson";
     let index = 0;
@@ -36,27 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index === text.length) {
             clearInterval(intervalId); // Stop the interval when all letters are displayed
         }
-    }, 100); // Adjust the interval duration as needed
+    }, 200); // Adjust the interval duration as needed
 });
 
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
-    }, { threshold: 0.5 });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const profileImg = document.getElementById('profile-img');
@@ -71,6 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
         profileImg.style.boxShadow = 'none';
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            const yOffset = -50; // Adjust this value to offset for fixed header height
+
+            if (targetElement) {
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({top: y, behavior: 'smooth'});
+            }
+        });
+    });
+});
+
 
 
 
