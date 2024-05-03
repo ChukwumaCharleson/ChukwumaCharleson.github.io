@@ -1,4 +1,4 @@
-import Skill from './Skill.js';
+const Skill = require('./Skill.js');
 
 function Skills() {
     return `
@@ -16,4 +16,4 @@ function Skills() {
         </div>`;
 }
 
-export default Skills;
+module.exports = Skills;
