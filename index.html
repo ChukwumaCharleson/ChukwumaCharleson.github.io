@@ -119,10 +119,16 @@
 
 
     <script src="js/Skill.js"></script>
-    <script src="js/Skills.js" type="module"></script>
-
+    <script src="js/Skills.js" defer></script>
     <script>
-        document.getElementById('skillsSection').innerHTML = Skills();
+        // Define a function to render the skills section
+        function renderSkills() {
+            var skillsSection = document.getElementById('skillsSection');
+            skillsSection.innerHTML = Skills.default(); // Access Skills function from the default export
+        }
+
+        // Call the renderSkills function after the Skills.js file is loaded
+        document.addEventListener('DOMContentLoaded', renderSkills);
     </script>
 
     <section id="timeline">
