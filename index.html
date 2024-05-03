@@ -122,12 +122,14 @@
     <script src="js/Skills.js" defer></script>
     <script>
         // Define a function to render the skills section
-        function renderSkills() {
-            var skillsSection = document.getElementById('skillsSection');
-            skillsSection.innerHTML = Skills.default(); // Access Skills function from the default export
+        async function renderSkills() {
+            const module = await import('./js/Skills.js');
+            const Skills = module.default;
+            const skillsSection = document.getElementById('skillsSection');
+            skillsSection.innerHTML = Skills();
         }
 
-        // Call the renderSkills function after the Skills.js file is loaded
+        // Call the renderSkills function after the DOM content is loaded
         document.addEventListener('DOMContentLoaded', renderSkills);
     </script>
 
