@@ -54,7 +54,7 @@ nav ul li a {
     background-image: url('../media/Picture3.png'); /* Replace with your background image */
     background-size: cover;
     background-position: top;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +64,16 @@ nav ul li a {
 }
 
 .hero-text {
-    font-size: 6rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
+.hero-description .first{
+    padding-top: 15px;
+}
+
 .hero-description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
