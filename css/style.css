@@ -75,12 +75,16 @@ nav ul li a {
 .hero-description {
     font-size: 1.2rem;
     font-weight: bold;
+    position: relative;
+    top: 50px;
 }
 
 /* Existing styles */
 
 .social-icons {
     margin-top: 20px;
+    position: relative;
+    top: 40px;
 }
 
 .social-icon {
