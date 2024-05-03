@@ -1,6 +1,6 @@
-const Skill = require('./Skill.js');
+import Skill from './Skill.js';
 
-function Skills() {
+export default function Skills() {
     return `
         <div class="skills">
             <h2>I have experience with these technologies</h2>
@@ -15,5 +15,3 @@ function Skills() {
             </div>
         </div>`;
 }
-
-module.exports = Skills;
