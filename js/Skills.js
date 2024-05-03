@@ -7,7 +7,6 @@ function Skills() {
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg', alt: 'The logo icon for react', title: 'Azure' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original-wordmark.svg', alt: 'The logo icon for HTML 5', title: 'PyTorch 5' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original-wordmark.svg', alt: 'The logo icon for CSS3', title: 'Tensorflow' })}
-                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original-wordmark.svg', alt: 'The logo icon for TailwindCSS', title: 'ScikitLearn' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg', alt: 'The logo icon for GitHub', title: 'GitHub' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg', alt: 'The logo icon for NPM', title: 'Python' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg', alt: 'The logo icon for NodeJS', title: 'Pandas' })}
@@ -16,12 +15,12 @@ function Skills() {
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg', alt: 'The logo icon for CSS3', title: 'SQL' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original-wordmark.svg', alt: 'The logo icon for TailwindCSS', title: 'Matplotlib' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original-wordmark.svg', alt: 'The logo icon for NPM', title: 'Fast API' })}
-                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original-wordmark.svg', alt: 'The logo icon for NodeJS', title: 'Django' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg', alt: 'The logo icon for react', title: 'Jupyter' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg', alt: 'The logo icon for HTML 5', title: 'HTML 5' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg', alt: 'The logo icon for CSS3', title: 'CSS 3' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original-wordmark.svg', alt: 'The logo icon for TailwindCSS', title: 'Streamlit' })}
-            </div>
+               
+                </div>
         </div>`;
 }
 

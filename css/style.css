@@ -100,7 +100,9 @@ nav ul li a {
 
 /* Style for the image container */
 .about-image {
-    margin-right: 20px; /* Add margin for spacing */
+    margin-right: 50px;
+    margin-top: 90px;
+    margin-left: 30px;
 }
 
 .about-image img {
@@ -283,7 +285,7 @@ nav ul li a {
         text-align: center;
         justify-content: center;
         align-items: center;
-        height: 85vh;
+        height: 100vh;
     }
 }
 
