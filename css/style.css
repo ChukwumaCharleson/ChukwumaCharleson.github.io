@@ -51,7 +51,20 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/* Hero section styles */
+/* Small Screens (Max Width of 640px) */
+@media screen and (max-width: 640px) {
+    header {
+        height: auto; /* Adjust height for small screens */
+        padding: 10px 0; /* Add padding to header */
+    }
+
+    nav ul li {
+        display: block; /* Display menu items as block for small screens */
+        margin: 5px 0; /* Adjust spacing between menu items */
+    }
+}
+
+
 /* Hero section styles */
 #hero {
     background-image: url('../media/Picture3.png'); /* Replace with your background image */
@@ -128,6 +141,15 @@ nav ul li a {
     margin-top: 20px;
     position: relative;
     top: 40px;
+}
+
+@media screen and (max-width: 640px) {
+    .social-icons {
+        margin-top: 15px;
+        top: 20px;
+    }
+
+
 }
 
 .social-icon {
