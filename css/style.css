@@ -221,10 +221,10 @@ nav ul li a {
     color: #503806; /* Change icon color on hover */
 }
 
-@media screen and (min-width: 641px) and (max-width: 1079px) {
+@media screen and (max-width: 1079px) {
     .social-icons {
         margin-top: 5px;
-        top: 10px;
+        top: 3px;
     }
 
     .social-icon {
@@ -292,8 +292,13 @@ nav ul li a {
     }
 
     .about-image {
-        margin-right: 0; /* Remove right margin for image on smaller screens */
+        margin-right: 0 auto; /* Remove right margin for image on smaller screens */
         text-align: center; /* Center image on smaller screens */
+    }
+
+    .btn {
+        margin: 0 auto; /* Center button horizontally */
+        margin-top: 10px; /* Add margin between image and button */
     }
 }
 
