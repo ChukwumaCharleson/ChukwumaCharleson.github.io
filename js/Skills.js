@@ -17,11 +17,8 @@ function Skills() {
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original-wordmark.svg', alt: 'The logo icon for Open CV', title: 'Open CV' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/djangorest/djangorest-original-wordmark.svg', alt: 'The logo icon for Django Rest', title: 'Django Rest Framework' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg', alt: 'The logo icon for Git', title: 'Git' })}
-                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg', alt: 'The logo icon for Pandas', title: 'Pandas' })}
-                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg', alt: 'The logo icon for Numpy', title: 'Numpy' })}
                 ${window.Skill({ source: '../media/assets/microsoft_powerbi.svg', alt: 'The logo icon for Power BI', title: 'Power BI' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg', alt: 'The logo icon for My SQL', title: 'SQL' })}
-                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original-wordmark.svg', alt: 'The logo icon for MatplotLib', title: 'Matplotlib' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg', alt: 'The logo icon for Jupyter', title: 'Jupyter' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original-wordmark.svg', alt: 'The logo icon for Streamlit', title: 'Streamlit' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', alt: 'The logo icon for ScikitLearn', title: 'Scikitlearn' })}
