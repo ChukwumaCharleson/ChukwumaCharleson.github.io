@@ -10,8 +10,7 @@ function Skills() {
                 ${window.Skill({ source: '../media/assets/chroma.svg', alt: 'The logo icon for Chroma DB', title: 'Chroma' })}
                 ${window.Skill({ source: '../media/assets/UiPath.svg', alt: 'The logo icon for UiPath', title: 'UI Path' })}
                 ${window.Skill({ source: '../media/assets/Blueprism.svg', alt: 'The logo icon for BluePrism', title: 'Blueprism' })}
-                ${window.Skill({ source: '../media/assets/OpenAI_Logo.png', alt: 'The logo icon for OpenAI', title: 'Open AI' })}
-                ${window.Skill({ source: '../media/assets/pinecone_logo.png', alt: 'The logo icon for Pinecone', title: 'Pinecone' })}
+                ${window.Skill({ source: '../media/assets/OpenAI.svg', alt: 'The logo icon for OpenAI', title: 'Open AI' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg', alt: 'The logo icon for Python', title: 'Python' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original-wordmark.svg', alt: 'The logo icon for Pytorch', title: 'PyTorch 5' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original-wordmark.svg', alt: 'The logo icon for Open CV', title: 'Open CV' })}
@@ -21,8 +20,9 @@ function Skills() {
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg', alt: 'The logo icon for My SQL', title: 'SQL' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg', alt: 'The logo icon for Jupyter', title: 'Jupyter' })}
                 ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original-wordmark.svg', alt: 'The logo icon for Streamlit', title: 'Streamlit' })}
-                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', alt: 'The logo icon for ScikitLearn', title: 'Scikitlearn' })}
-               
+                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', alt: 'The logo icon for ScikitLearn', title: 'Scikitlearn' })}   
+                ${window.Skill({ source: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original-wordmark.svg', alt: 'The logo icon for Firebase', title: 'Firebase' })}   
+
                 </div>
         </div>`;
 }
