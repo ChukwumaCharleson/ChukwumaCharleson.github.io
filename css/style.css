@@ -52,18 +52,63 @@ nav ul li a {
 }
 
 /* Small Screens (Max Width of 640px) */
-@media screen and (max-width: 640px) {
+/* Hamburger Icon */
+.hamburger-menu {
+    display: none; /* Hide hamburger menu by default */
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Small Screens (Max Width of 640px) */
+@media screen and (min-width: 641px) and (max-width: 1079px) {
     header {
         height: auto; /* Adjust height for small screens */
         padding: 10px 0; /* Add padding to header */
     }
 
-    nav ul li {
-        display: block; /* Display menu items as block for small screens */
-        margin: 5px 0; /* Adjust spacing between menu items */
+    nav {
+        display: none; /* Hide regular menu for small screens */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu for small screens */
+    }
+
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        top: 6.2%; /* Match header height */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .show-dropdown {
+        display: block !important;
     }
 }
-
 
 /* Hero section styles */
 #hero {
@@ -101,17 +146,17 @@ nav ul li a {
 /* Medium Screens (Min Width of 641px and Max Width of 1079px) */
 @media screen and (min-width: 641px) and (max-width: 1079px) {
     #hero {
-        height: 45vh; /* Default height for medium screens */
+        height: auto; /* Default height for medium screens */
         padding: 20px; /* Ensure there's enough padding */
     }
 
     .hero-text {
-        font-size: 2.5rem; /* Adjust font size for medium screens */
+        font-size: 2rem; /* Adjust font size for medium screens */
         padding-bottom: 15px;
     }
 
     .hero-description {
-        font-size: 1.1rem; /* Adjust font size for medium screens */
+        font-size: 1rem; /* Adjust font size for medium screens */
         top: 0; /* Reset position for medium screens */
     }
 }
@@ -143,7 +188,7 @@ nav ul li a {
     top: 40px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 641px) and (max-width: 1079px) {
     .social-icons {
         margin-top: 15px;
         top: 20px;
