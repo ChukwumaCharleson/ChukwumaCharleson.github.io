@@ -291,8 +291,12 @@ nav ul li a {
         margin-bottom: 20px; /* Add bottom margin for spacing */
     }
 
+    .about-text h2{
+        margin-top: 30px;
+    }
+
     .about-image {
-        margin-right: 0 auto; /* Remove right margin for image on smaller screens */
+        margin: 0 auto; /* Remove right margin for image on smaller screens */
         text-align: center; /* Center image on smaller screens */
     }
 
@@ -310,7 +314,7 @@ nav ul li a {
 
 /* Update project section design */
 #projects {
-    padding-top: 100px; /* Add some top padding to create space for sticky header */
+    padding-top: 40px; /* Add some top padding to create space for sticky header */
 }
 
 .project-grid {
