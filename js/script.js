@@ -49,8 +49,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function toggleDropdown() {
     var dropdownContent = document.getElementById("dropdown-content");
-    dropdownContent.classList.toggle("show-dropdown");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
 }
-
-
 

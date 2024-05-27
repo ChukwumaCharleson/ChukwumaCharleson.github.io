@@ -21,51 +21,58 @@ body {
 /* Existing styles here... */
 
 /* Header styles */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 6.2%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    align-content: center; /* Ensure header stays on top of other content */
+@media screen and (min-width: 1080px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 6.2%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        align-content: center; /* Ensure header stays on top of other content */
+    }
+    
+    nav {
+        text-align: center; /* Center align menu links */
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px; /* Adjust spacing between menu items */
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
 }
 
-nav {
-    text-align: center; /* Center align menu links */
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px; /* Adjust spacing between menu items */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
 
 /* Small Screens (Max Width of 640px) */
 /* Hamburger Icon */
-.hamburger-menu {
-    display: none; /* Hide hamburger menu by default */
-    cursor: pointer;
+@media screen and (max-width: 640px) {
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu by default */
+        cursor: pointer;
+    }
+    
+    .hamburger-menu .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
-.hamburger-menu .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-}
 
 /* Small Screens (Max Width of 640px) */
 @media screen and (min-width: 641px) and (max-width: 1079px) {
