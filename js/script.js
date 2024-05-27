@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index === text.length) {
             clearInterval(intervalId); // Stop the interval when all letters are displayed
         }
-    }, 200); // Adjust the interval duration as needed
+    }, 150); // Adjust the interval duration as needed
 });
 
 
