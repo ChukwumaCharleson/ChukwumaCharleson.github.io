@@ -30,7 +30,9 @@ header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    align-content: center; /* Ensure header stays on top of other content */
+    display: flex; /* Make header flex container */
+    justify-content: space-between; /* Spread content horizontally */
+    align-items: center; /* Center align content vertically */
 }
 
 nav {
@@ -39,6 +41,8 @@ nav {
 
 nav ul {
     padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default list styles */
 }
 
 nav ul li {
@@ -84,19 +88,18 @@ nav ul li a {
     display: none; /* Hide dropdown content by default */
     position: fixed;
     top: 6.2%; /* Match header height */
-    right: 0; /* Align to the right */
-    width: 60%; /* Adjust width */
-    background-color: rgba(0, 0, 0, 0.5);
+    right: 10px; /* Align to the right with some margin */
+    width: auto; /* Adjust width to fit content */
+    background-color: rgba(0, 0, 0, 0.5); /* More opaque background */
     z-index: 1000;
     text-align: center;
     padding: 10px; /* Add padding */
-    border-top-left-radius: 10px; /* Rounded corners */
-    border-bottom-left-radius: 10px;
+    border-radius: 5px; /* Rounded corners */
 }
 
 .dropdown-content a {
     display: block;
-    padding: 10px 0;
+    padding: 5px 10px;
     color: #fff;
     text-decoration: none;
     font-size: 1rem; /* Adjust font size */
@@ -107,6 +110,7 @@ nav ul li a {
     header {
         height: auto; /* Adjust height for small screens */
         padding: 10px 0; /* Add padding to header */
+        background-color: rgba(0, 0, 0, 0); /* Completely transparent background on smaller screens */
     }
 
     nav {
@@ -118,8 +122,9 @@ nav ul li a {
     }
 
     .dropdown-content {
-        width: 80%; /* Adjust width */
+        width: auto; /* Adjust width */
         top: 6.2%; /* Match header height */
+        right: 10px;
     }
 
     .show-dropdown {
@@ -205,15 +210,6 @@ nav ul li a {
     top: 40px;
 }
 
-@media screen and (min-width: 641px) and (max-width: 1079px) {
-    .social-icons {
-        margin-top: 15px;
-        top: 20px;
-    }
-
-
-}
-
 .social-icon {
     color: #fff;
     font-size: 1.5rem;
@@ -223,6 +219,19 @@ nav ul li a {
 
 .social-icon:hover {
     color: #503806; /* Change icon color on hover */
+}
+
+@media screen and (min-width: 641px) and (max-width: 1079px) {
+    .social-icons {
+        margin-top: 5px;
+        top: 10px;
+    }
+
+    .social-icon {
+        font-size: 1rem;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+    }
 }
 
 
